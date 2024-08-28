@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logoAlura.png" alt="Logo" class="logo">
+        <h1>Encriptador y Desencriptador de Texto</h1>
+    </header>
+
+    <div class="container">
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Introduce tu texto aquí"></textarea>
+            <button id="copyInputBtn" class="copy-btn" onclick="copyText('inputText')">Copiar Texto Original</button>
+        </div>
+
+        <div class="buttons">
+            <button id="encryptBtn" onclick="encryptText()">Encriptar</button>
+            <button id="decryptBtn" onclick="decryptText()">Desencriptar</button>
+        </div>
+
+        <div class="output-section">
+            <textarea id="outputText" placeholder="Aquí aparecerá el texto procesado" readonly></textarea>
+            <button id="copyOutputBtn" class="copy-btn" onclick="copyText('outputText')">Copiar Texto Procesado</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desarrollado por Nicolas Zarantonello con Alura Latam</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
